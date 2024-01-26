@@ -1,6 +1,6 @@
 import React from "react";
 import Burger1 from "../../assets/burger/Boss Whopper Veg.png";
-import Burger2 from "../../assets/burger/Veg Whopper Double Patty.png";
+import Burger2 from "../../assets/burger/Veg Whopper.png";
 import Burger3 from "../../assets/burger/Veg Whopper with Cheese.png";
 import Vector from "../../assets/vector/vector.jpg";
 
