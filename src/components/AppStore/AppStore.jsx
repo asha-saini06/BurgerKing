@@ -7,24 +7,30 @@ const AppStore = () => {
       <div className="container">
         <div className="grid items-center">
           <div className="space-y-6 max-w-xl mx-auto">
-            <div className="text-xl sm:text-4xl font-semibold text-center text-gray-700">
-              <h1>Burger King is available for Android and iOS</h1>
-              <div className="flex justify-center flex-wrap items-center">
-                <a href="#">
-                  <img
-                    src={PlayStoreImg}
-                    alt=""
-                    className="max-w-[100px] sm:max-w-[200px]"
-                  />
-                </a>
-                <a href="#">
-                  <img
-                    src={AppStoreImg}
-                    alt=""
-                    className="max-w-[100px] sm:max-w-[200px]"
-                  />
-                </a>
-              </div>
+            <h1
+              data-aos="zoom-in"
+              className="text-xl sm:text-4xl font-semibold text-center text-gray-700"
+            >
+              Burger King is available for Android and iOS
+            </h1>
+            <div className="flex justify-center flex-wrap items-center">
+              <a href="#">
+                <img
+                  data-aos="fade-up"
+                  src={PlayStoreImg}
+                  alt=""
+                  className="max-w-[100px] sm:max-w-[200px]"
+                />
+              </a>
+              <a href="#">
+                <img
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  src={AppStoreImg}
+                  alt=""
+                  className="max-w-[100px] sm:max-w-[200px]"
+                />
+              </a>
             </div>
           </div>
         </div>

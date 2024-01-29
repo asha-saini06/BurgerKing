@@ -5,12 +5,12 @@ import { GiFoodTruck } from "react-icons/gi";
 
 const Banner = () => {
   return (
-    <div className="min-h-[500px] ">
-      <div className="min-h-[500px] flex justify-center items-center">
+    <div className="min-h-[550px] ">
+      <div className="min-h-[550px] flex justify-center items-center backdrop-blur-xl py-12 sm:py-0">
         <div className="container">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* image section  */}
-            <div>
+            <div data-aos="flip-up">
               <img
                 src={BurgerImg}
                 alt="floating burger"
@@ -19,10 +19,13 @@ const Banner = () => {
             </div>
             {/* text content section  */}
             <div className="flex flex-col justify-center gap-6 sm:pt-0">
-              <h1 className="text-3xl sm:text-4xl font-bold">
+              <h1 data-aos="fade-up" className="text-3xl sm:text-4xl font-bold">
                 Your taste buds deserve nothing less!
               </h1>
-              <p className="text-gray-500 text-sm tracking-wide leading-5">
+              <p
+                data-aos="fade-up"
+                className="text-gray-500 text-sm tracking-wide leading-5"
+              >
                 Savor the extraordinary at Burger King! Our flame-grilled
                 burgers are a tantalizing blend of bold flavors and quality
                 ingredients. <br />
@@ -32,13 +35,13 @@ const Banner = () => {
                 is served with every bite!
               </p>
               <div className="flex gap-6">
-                <div>
+                <div data-aos="fade-up">
                   <GrSecure className="text-4xl h-20 w-20 shadow-sm p-5 rounded-full bg-violet-100" />
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-delay="200">
                   <IoFastFood className="text-4xl h-20 w-20 shadow-sm p-5 rounded-full bg-orange-100" />
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-delay="400">
                   <GiFoodTruck className="text-4xl h-20 w-20 shadow-sm p-5 rounded-full bg-green-100" />
                 </div>
               </div>
