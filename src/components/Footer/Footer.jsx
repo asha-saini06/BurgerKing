@@ -7,6 +7,71 @@ import {
 } from "react-icons/fa";
 import footerLogo from "../../assets/BK-logo.png";
 
+const FooterLinks = [
+  {
+    id: 1,
+    title: "BK's INFO",
+    links: [
+      {
+        id: 1,
+        name: "About BK*",
+      },
+      {
+        id: 2,
+        name: "Fresh Taste",
+      },
+      {
+        id: 3,
+        name: "Services",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Contact",
+    links: [
+      {
+        id: 1,
+        name: "FAQs & Support",
+      },
+      {
+        id: 2,
+        name: "Careers",
+      },
+      {
+        id: 3,
+        name: "Customer Care",
+      },
+      {
+        id: 4,
+        name: "Franchising",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "BK* CARES",
+    links: [
+      {
+        id: 1,
+        name: "Nutrition Information",
+      },
+      {
+        id: 2,
+        name: "Creating Brighter Futures",
+      },
+      {
+        id: 3,
+        name: "Trust & Taste",
+      },
+      {
+        id: 4,
+        name: "COVID-19 Safety",
+      },
+    ],
+  },
+];
+
 const Footer = () => {
   return (
     <div data-aos="fade-up" className="bg-gray-100">
@@ -46,63 +111,58 @@ const Footer = () => {
           </div>
           {/* footer links */}
           <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10 ">
+            {/* First Column */}
             <div className="footer-links">
               <div className="py-8 px-4 ">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
                   BK&apos;s INFO
                 </h1>
                 <ul className={`flex flex-col gap-3`}>
-                  <li className="cursor-pointer hover:text-primary duration-300">
-                    About BK*
-                  </li>
-                  <li className="cursor-pointer hover:text-primary duration-300">
-                    Fresh Taste
-                  </li>
-                  <li className="cursor-pointer hover:text-primary duration-300">
-                    Services
-                  </li>
+                  {FooterLinks[0].links.map((link) => (
+                    <li
+                      className="cursor-pointer hover:text-primary duration-300"
+                      key={link.id}
+                    >
+                      <a href={link.link}> {link.name}</a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
+            {/* Second Column */}
             <div className="footer-links">
-              <div className="py-8 px-4 ">
+              <div className="py-8 px-4">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
-                  CONTACT
+                  Contact
                 </h1>
-                <ul className="flex flex-col gap-3">
-                  <li className="cursor-pointer hover:text-primary duration-300">
-                    FAQs & Support
-                  </li>
-                  <li className="cursor-pointer hover:text-primary duration-300">
-                    Careers
-                  </li>
-                  <li className="cursor-pointer hover:text-primary duration-300">
-                    Customer Care
-                  </li>
-                  <li className="cursor-pointer hover:text-primary duration-300">
-                    Franchising
-                  </li>
+                <ul className={`flex flex-col gap-3`}>
+                  {FooterLinks[1].links.map((link) => (
+                    <li
+                      className="cursor-pointer hover:text-primary duration-300"
+                      key={link.id}
+                    >
+                      <a href={link.link}>{link.name}</a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
+
+            {/* Third Column */}
             <div className="footer-links">
-              <div className="py-8 px-4 ">
+              <div className="py-8 px-4">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
                   BK* CARES
                 </h1>
-                <ul className="flex flex-col gap-3">
-                  <li className="cursor-pointer hover:text-primary duration-300">
-                    Nutrition Information
-                  </li>
-                  <li className="cursor-pointer hover:text-primary duration-300">
-                    Creating Brighter Futures
-                  </li>
-                  <li className="cursor-pointer hover:text-primary duration-300">
-                    Trust & Taste
-                  </li>
-                  <li className="cursor-pointer hover:text-primary duration-300">
-                    COVID-19 Safety
-                  </li>
+                <ul className={`flex flex-col gap-3`}>
+                  {FooterLinks[2].links.map((link) => (
+                    <li
+                      className="cursor-pointer hover:text-primary duration-300"
+                      key={link.id}
+                    >
+                      <a href={link.link}>{link.name}</a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

@@ -25,11 +25,11 @@ const NavLinks = [
 const Navbar = () => {
   return (
     <div className="shadow-xl">
-      <div className="container py=3 sm:py-0 ">
+      <div className="container py-3 sm:py-0 ">
         <div className="flex justify-between items-center">
           {/* logo section */}
           <div>
-            <a href="/#">
+            <a href="/#" className="font-bold text-2xl sm:text-3xl flex gap-2">
               <img src={Logo} alt="logo" className="w-16" />
             </a>
           </div>
