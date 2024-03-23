@@ -2,7 +2,7 @@
 
 This project is a demonstration website inspired by the design of Burger King's official website. It is built using React and Tailwind CSS.
 
-![Burger](./BK.png)
+![Burger](./public/BK.png)
 
 ## Features
 
